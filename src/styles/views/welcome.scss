@@ -1,0 +1,35 @@
+.app {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 500px;
+    height: 120px;
+
+    li {
+        flex: 1;
+        text-align: center;
+
+        a:hover {
+            border-radius: 5px;
+            color: #1890ff;
+        }
+
+        a {
+            color: #333333;
+        }
+    }
+
+    .logo {
+        height: 60px;
+        font-size: 60px;
+        margin: 10px 10px;
+    }
+
+    .name {
+        display: block;
+    }
+}

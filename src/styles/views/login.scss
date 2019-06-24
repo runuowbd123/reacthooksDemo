@@ -1,0 +1,69 @@
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset;
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+textarea:focus {
+    -webkit-box-shadow: 0 0 0 1000px white inset;
+}
+
+.login-box {
+    box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 8px 0px;
+    position: fixed;
+    background-color: white;
+    width: 410px;
+    z-index: 2;
+    padding-left: 46px;
+    padding-bottom: 61px;
+    padding-top: 39.7px;
+    padding-right: 46px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+
+    .login-title {
+        font-family: PingFangSC-Regular;
+        font-size: 26px;
+        color: #333333;
+        // text-align: justify;
+        display: flex;
+        justify-content: space-between;
+
+        a {
+            font-size: 14px;
+
+            span {
+                line-height: 39px;
+            }
+        }
+    }
+
+    .link-box {
+        display: flex;
+        width: 320px;
+        justify-content: space-between;
+        margin-top: 12px;
+    }
+}
+
+.login-btn {
+    width: 320px;
+    height: 40px;
+    font-size: 16px;
+    color: white;
+    background-color: #2491F7;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.valid-code-box {
+    display: flex;
+    width: 320px;
+    justify-content: space-between;
+}
