@@ -1,4 +1,4 @@
-# 义乌交通局项目
+# reacthooks
 
 Typescript + React + AntDesign + Sass
 
@@ -9,12 +9,3 @@ Typescript + React + AntDesign + Sass
 ```bash
 npm run dev
 ```
-#### 打包
-
-```bash
-npm run build
-```
-
-## 参考文档
-
-- [typescript-react 组件](https://fettblog.eu/typescript-react/components/)
