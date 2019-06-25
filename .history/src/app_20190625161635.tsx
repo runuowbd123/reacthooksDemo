@@ -1,5 +1,8 @@
 import * as React from 'react';
+import * as ReactDOM from 'react-dom';
+
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';
+import Root from './root';
 
 import Admin from './views/admin';
 import Login from './views/login';
@@ -7,8 +10,8 @@ import NotFund from './views/notFund';
 import Receipts from './views/receipts';
 import Welcome from './views/welcome';
 
-const AppRouter = () => {
-    return (
+ReactDOM.render(
+    (
         <Router>
             <Switch>
                 <Route path="/" exact={true} component={Welcome} />
@@ -18,7 +21,6 @@ const AppRouter = () => {
                 <Route component={NotFund} />
             </Switch>
         </Router>
-    );
-};
-
-export default AppRouter;
+    ),
+    document.getElementById('app'),
+);

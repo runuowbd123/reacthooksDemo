@@ -33,7 +33,7 @@ export default class Welcome extends React.Component {
                         flex: 1,
                     }}
                 >
-                    <Route path="/" exact={true} component={Root} />
+                    <Route path="/demo" exact={true} component={Root} />
                     {/* <Route path="/" exact={true} component={Root} /> */}
                 </div>
 

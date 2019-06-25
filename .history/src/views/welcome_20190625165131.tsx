@@ -21,20 +21,10 @@ export default class Welcome extends React.Component {
                 <div
                     style={{
                         background: '#29323b',
-                        color: '#fff',
-                        height: '50px',
+                        height: '20px',
                     }}
                 >
                     i'm sidebar
-                </div>
-                <div
-                    style={{
-                        background: '#f0f6f9',
-                        flex: 1,
-                    }}
-                >
-                    <Route path="/" exact={true} component={Root} />
-                    {/* <Route path="/" exact={true} component={Root} /> */}
                 </div>
 
             </div>

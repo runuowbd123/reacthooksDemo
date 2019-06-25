@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-    port: 8082,
+    port: 8081,
     host: '0.0.0.0',
     proxy: { // proxy config
         '/api' : {

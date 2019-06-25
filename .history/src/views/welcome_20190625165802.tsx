@@ -34,7 +34,6 @@ export default class Welcome extends React.Component {
                     }}
                 >
                     <Route path="/" exact={true} component={Root} />
-                    {/* <Route path="/" exact={true} component={Root} /> */}
                 </div>
 
             </div>

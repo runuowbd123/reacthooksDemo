@@ -29,12 +29,11 @@ export default class Welcome extends React.Component {
                 </div>
                 <div
                     style={{
-                        background: '#f0f6f9',
+                        background: '#999',
                         flex: 1,
                     }}
                 >
-                    <Route path="/" exact={true} component={Root} />
-                    {/* <Route path="/" exact={true} component={Root} /> */}
+                    s
                 </div>
 
             </div>
