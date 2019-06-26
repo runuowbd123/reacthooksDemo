@@ -15,13 +15,13 @@ interface Props {
     history: any; // 选中的id
 }
 export default class Welcome extends React.Component<Props, State> {
+    constructor(props: Props) {
+        super(props);
+    }
 
     public state: State = {
         select: '/',
     };
-    constructor(props: Props) {
-        super(props);
-    }
 
     public componentDidMount() {
         this.props.history.push('/');

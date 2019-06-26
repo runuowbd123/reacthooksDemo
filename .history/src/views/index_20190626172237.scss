@@ -1,0 +1,26 @@
+.section{
+    align-items: center;
+    display: flex;
+    .image{
+      display: flex;
+      overflow: hidden;
+    }
+    img{
+      position: relative;
+      left: 0;
+      margin-bottom: .1rem;
+      filter: drop-shadow(#1890ff 30px 0);
+    }
+    .word{
+        margin-left: 10px;
+    }
+    &:hover{
+        img{
+            left: -30px;
+        }
+        .word {
+            color: #1890ff
+        }
+    } 
+}
+

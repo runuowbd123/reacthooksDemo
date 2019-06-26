@@ -4,28 +4,9 @@ import * as _ from 'lodash';
 import { HashRouter as Router, Link, Route, Switch } from 'react-router-dom';
 import Root from '../root';
 import DisplayContentDemo from './DisplayContentDemo';
-import FlexBugDemo from './flexBugDemo';
-import './index.scss';
-import SvgColorChangeDemo from './svgColorChangeDemo';
+import flexBugDemo from './flexBugDemo';
 
-interface State {
-    select: any; // 选中的id
-}
-interface Props {
-    history: any; // 选中的id
-}
-export default class Welcome extends React.Component<Props, State> {
-
-    public state: State = {
-        select: '/',
-    };
-    constructor(props: Props) {
-        super(props);
-    }
-
-    public componentDidMount() {
-        this.props.history.push('/');
-    }
+export default class Welcome extends React.Component {
 
     public render() {
         return (
@@ -63,23 +44,13 @@ export default class Welcome extends React.Component<Props, State> {
                             {
                                 key: 'display:content属性的demo',
                                 link: '/displaycontentdemo',
-                            },
-                            {
-                                key: 'svg颜色改变',
-                                link: '/svgcolorchange',
-                            },
+                            }
                         ], (item) => {
                             return (
-                                <Link to={item.link} key={item.key}>
+                                <Link to={item.link}>
                                     <div
-                                        // tslint:disable-next-line:jsx-no-lambda
-                                        onClick={() => {
-                                            this.setState({
-                                                select: item.link,
-                                            });
-                                        }}
                                         style={{
-                                            color: this.state.select === item.link ? '#1890ff' : '#fff',
+                                            color: '#fff',
                                             padding: '0 20px',
                                             textDecoration: 'none',
                                         }}
@@ -98,9 +69,8 @@ export default class Welcome extends React.Component<Props, State> {
                     }}
                 >
                     <Route path="/" exact={true} component={Root} />
-                    <Route path="/flexbugdemo" component={FlexBugDemo} />
+                    <Route path="/flexbugdemo" component={flexBugDemo} />
                     <Route path="/displaycontentdemo" component={DisplayContentDemo}/>
-                    <Route path="/svgcolorchange" component={SvgColorChangeDemo}/>
                 </div>
 
             </div>

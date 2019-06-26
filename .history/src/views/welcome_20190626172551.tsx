@@ -11,21 +11,10 @@ import SvgColorChangeDemo from './svgColorChangeDemo';
 interface State {
     select: any; // 选中的id
 }
-interface Props {
-    history: any; // 选中的id
-}
-export default class Welcome extends React.Component<Props, State> {
-
+export default class Welcome extends React.Component<State> {
     public state: State = {
         select: '/',
     };
-    constructor(props: Props) {
-        super(props);
-    }
-
-    public componentDidMount() {
-        this.props.history.push('/');
-    }
 
     public render() {
         return (
@@ -72,12 +61,6 @@ export default class Welcome extends React.Component<Props, State> {
                             return (
                                 <Link to={item.link} key={item.key}>
                                     <div
-                                        // tslint:disable-next-line:jsx-no-lambda
-                                        onClick={() => {
-                                            this.setState({
-                                                select: item.link,
-                                            });
-                                        }}
                                         style={{
                                             color: this.state.select === item.link ? '#1890ff' : '#fff',
                                             padding: '0 20px',
