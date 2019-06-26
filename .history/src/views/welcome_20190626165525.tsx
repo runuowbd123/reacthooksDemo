@@ -3,7 +3,7 @@ import * as React from 'react';
 import * as _ from 'lodash';
 import { HashRouter as Router, Link, Route, Switch } from 'react-router-dom';
 import Root from '../root';
-import flexBugDemo from './flexBugDemo';
+import flexBugDemo from './demo2';
 
 export default class Welcome extends React.Component {
 
