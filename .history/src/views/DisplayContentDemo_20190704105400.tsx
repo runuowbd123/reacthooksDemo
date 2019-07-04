@@ -26,12 +26,12 @@ class DisplayContentDemo extends React.Component<HomeProps, HomeState> {
                     right: 0,
                     display: 'flex',
                     flexDirection: 'column',
+                    marginBottom: '200px',
                 }}
             >
                 <div
                     style={{
                         display: 'flex',
-                        marginBottom: '50px',
                     }}
                 >
                     <div

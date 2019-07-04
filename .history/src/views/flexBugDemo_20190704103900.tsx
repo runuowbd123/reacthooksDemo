@@ -40,13 +40,13 @@ class FlexBugDemo extends React.Component<HomeProps, HomeState> {
                         style={{
                             flex: 1,
                             // tslint:disable-next-line:object-literal-sort-keys
+                            background: 'green',
                             display: 'flex',
                             // overflow: 'hidden',
                         }}
                     >
                         <div
                             style={{
-                                background: 'green',
                                 width: '400px',
                                 // tslint:disable-next-line:object-literal-sort-keys
                                 display: 'flex',
@@ -59,7 +59,7 @@ class FlexBugDemo extends React.Component<HomeProps, HomeState> {
                         <div
                             style={{
                                 border: '1px solid #ccc',
-                                flex: 1,
+                                // flex: 1,
                                 overflow: 'auto',
                                 // tslint:disable-next-line:object-literal-sort-keys
                                 display: 'flex',

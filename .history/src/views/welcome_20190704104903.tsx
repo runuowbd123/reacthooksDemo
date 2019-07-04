@@ -25,10 +25,7 @@ export default class Welcome extends React.Component<Props, State> {
 
     public componentDidMount() {
         console.log(window.location.hash);
-        this.setState({
-            select: ((window.location.hash).split('#'))[1],
-        });
-        this.props.history.push(((window.location.hash).split('#'))[1]);
+        // this.props.history.push('/');
     }
 
     public render() {

@@ -31,7 +31,6 @@ class DisplayContentDemo extends React.Component<HomeProps, HomeState> {
                 <div
                     style={{
                         display: 'flex',
-                        marginBottom: '50px',
                     }}
                 >
                     <div
@@ -51,7 +50,7 @@ class DisplayContentDemo extends React.Component<HomeProps, HomeState> {
                         <div
                             style={{
                                 border: '1px solid red',
-                                height: '200px',
+                                height: '400px',
                                 width: '200px',
                             }}
                         >
@@ -81,6 +80,7 @@ class DisplayContentDemo extends React.Component<HomeProps, HomeState> {
                 <div
                     style={{
                         display: 'flex',
+                        marginTop: '200px',
                     }}
                 >
                     <div
