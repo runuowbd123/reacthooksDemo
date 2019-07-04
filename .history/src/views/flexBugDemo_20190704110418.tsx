@@ -67,11 +67,11 @@ class FlexBugDemo extends React.Component<HomeProps, HomeState> {
                                 // width: 0,
                             }}
                         >
-                            {/* <div
+                            <div
                                 style={{
-                                    width: '2000px',
+                                    height: '2000px',
                                     // tslint:disable-next-line:object-literal-sort-keys
-                                    height: '50px',
+                                    width: '50px',
                                     border: '1px solid #ccc',
                                     background: 'purple',
                                     flex: 'none',
@@ -79,7 +79,7 @@ class FlexBugDemo extends React.Component<HomeProps, HomeState> {
                                 }}
                             >
                                 righttableddddddddddddddddddddddddd
-                            </div> */}
+                            </div>
                         </div>
                     </div>
                 </div>

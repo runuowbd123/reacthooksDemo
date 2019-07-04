@@ -79,8 +79,8 @@ class FlexBugDemo extends React.Component<HomeProps, HomeState> {
                                 }}
                             >
                                 righttableddddddddddddddddddddddddd
-                            </div> */}
-                        </div>
+                            </div>
+                        </div> */}
                     </div>
                 </div>
             </div>

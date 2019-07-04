@@ -67,7 +67,7 @@ class FlexBugDemo extends React.Component<HomeProps, HomeState> {
                                 // width: 0,
                             }}
                         >
-                            {/* <div
+                            <div
                                 style={{
                                     width: '2000px',
                                     // tslint:disable-next-line:object-literal-sort-keys
@@ -79,7 +79,7 @@ class FlexBugDemo extends React.Component<HomeProps, HomeState> {
                                 }}
                             >
                                 righttableddddddddddddddddddddddddd
-                            </div> */}
+                            </div>
                         </div>
                     </div>
                 </div>
