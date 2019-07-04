@@ -34,7 +34,6 @@ class FlexBugDemo extends React.Component<HomeProps, HomeState> {
                         // tslint:disable-next-line:object-literal-sort-keys
                         border: '1px solid #ccc',
                         display: 'flex',
-                        // overflow: 'hidden',
                     }}
                 >
                     <div
@@ -42,6 +41,7 @@ class FlexBugDemo extends React.Component<HomeProps, HomeState> {
                             flex: 1,
                             // tslint:disable-next-line:object-literal-sort-keys
                             display: 'flex',
+                            // overflow: 'hidden',
                         }}
                     >
                         <div
@@ -64,6 +64,7 @@ class FlexBugDemo extends React.Component<HomeProps, HomeState> {
                                 // tslint:disable-next-line:object-literal-sort-keys
                                 display: 'flex',
                                 background: 'orange',
+                                // height: 0,
                             }}
                         >
                             {/* <div
