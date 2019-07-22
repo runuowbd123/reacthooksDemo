@@ -5,7 +5,7 @@ import { HashRouter as Router, Link, Route, Switch } from 'react-router-dom';
 import DisplayContentDemo from './DisplayContentDemo';
 import FlexBugDemo from './flexBugDemo';
 import './index.scss';
-import App from './reactHook/root';
+import { App } from './reactHook/classRoot';
 import SvgColorChangeDemo from './svgColorChangeDemo';
 interface State {
     select: any; // 选中的id

@@ -5,8 +5,9 @@ import { HashRouter as Router, Link, Route, Switch } from 'react-router-dom';
 import DisplayContentDemo from './DisplayContentDemo';
 import FlexBugDemo from './flexBugDemo';
 import './index.scss';
-import App from './reactHook/root';
+import Root from './reactHook/root';
 import SvgColorChangeDemo from './svgColorChangeDemo';
+
 interface State {
     select: any; // 选中的id
 }
@@ -100,7 +101,7 @@ export default class Welcome extends React.Component<Props, State> {
                         flex: 1,
                     }}
                 >
-                    <Route path="/" exact={true} component={App} />
+                    <Route path="/" exact={true} component={Root} />
                     <Route path="/flexbugdemo" component={FlexBugDemo} />
                     <Route path="/displaycontentdemo" component={DisplayContentDemo}/>
                     <Route path="/svgcolorchange" component={SvgColorChangeDemo}/>
