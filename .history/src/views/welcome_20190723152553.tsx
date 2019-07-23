@@ -72,10 +72,6 @@ export default class Welcome extends React.Component<Props, State> {
                                 key: 'svg颜色改变',
                                 link: '/svgcolorchange',
                             },
-                            {
-                                key: 'css之clipPath',
-                                link: '/clippath',
-                            },
                         ], (item) => {
                             return (
                                 <Link to={item.link} key={item.key}>
