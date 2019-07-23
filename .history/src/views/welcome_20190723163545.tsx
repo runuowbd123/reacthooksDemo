@@ -97,7 +97,6 @@ export default class Welcome extends React.Component<Props, State> {
                                             textDecoration: 'none',
                                             // tslint:disable-next-line:object-literal-sort-keys
                                             flex: 'none',
-                                            wordBreak: 'keep-all',
                                         }}
                                     >
                                         {item.key}
