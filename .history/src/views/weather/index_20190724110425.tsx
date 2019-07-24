@@ -45,17 +45,11 @@ class Weather extends React.Component {
                         <div className="title">
                             雷雨
                         </div>
-                        <div className="weT thunder">
+                        <div className="we thunder">
                             <div className="flash" />
-                            <div className="flash" style={{ left: '50%' }} />
-                            <div className="flash" style={{ left: '35%', top: '66%' }} />
+                            <div className="flash" style={{ left: '40%' }} />
+                            <div className="flash" style={{ left: '30%', top: '60%' }} />
                         </div>
-                    </section>
-                    <section>
-                        <div className="title">
-                            下雪
-                        </div>
-                        <div className="we snowy"/>
                     </section>
 
                 </div>

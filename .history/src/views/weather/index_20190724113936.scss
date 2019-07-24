@@ -173,7 +173,7 @@ section{
         37.5% 50%);
     transform: rotate(10deg);
     visibility: visible;
-    animation: flashDis 2.5s linear infinite; 
+    animation: flashDis 1.5s linear infinite; 
 }
 
 @keyframes flashDis {
@@ -204,67 +204,25 @@ section{
     height: 240px;
     background: rgba(35, 183, 229, 1);
     border-radius: 8px;
-
-    animation: backDis 2.5s linear infinite; 
 }
 @keyframes backDis {
     0% {
         background: rgba(35, 183, 229, 1);
     }
-    20%{
+    45%{
         background: rgba(35, 183, 229, 1);
     }
-    30% {
+    50% {
         background: rgba(0, 0, 0, 0.5);
     }
-    85%{
+    65%{
         background: rgba(0, 0, 0, 0.5);
+    }
+    70% {
+        background: rgba(35, 183, 229, 1);
     }
     100% {
         background: rgba(35, 183, 229, 1);
     }
 }
 
-.snowy:after {
-    content: "";
-    position: absolute;
-    top:50%;
-    left: 25%;
-    width: 8px;
-    height: 8px;
-    background: #fff;
-    border-radius: 50%;
-    box-shadow:
-        #fff 25px -10px 0,
-        #fff 50px 0 0,
-        #fff 75px -10px 0,
-        #fff 0 25px 0,
-        #fff 25px 15px 0,
-        #fff 50px 25px 0,
-        #fff 75px 15px 0,
-        #fff 0 50px 0,
-        #fff 25px 40px 0,
-        #fff 50px 50px 0,
-        #fff 75px 40px 0;
-    animation: snowDrop 2s linear infinite; 
-}
-@keyframes snowDrop {
-    0% {
-        transform: translateY(0);
-    }
-    100% {
-        transform: translateY(25px);
-        box-shadow:
-        #fff 25px -10px 0,
-        #fff 50px 0 0,
-        #fff 75px -10px 0,
-        #fff 0 25px 0,
-        #fff 25px 15px 0,
-        #fff 50px 25px 0,
-        #fff 75px 15px 0,
-        rgba(255, 255, 255, 0) 0 50px 0,
-        rgba(255, 255, 255, 0) 25px 40px 0,
-        rgba(255, 255, 255, 0) 50px 50px 0,
-        rgba(255, 255, 255, 0) 75px 40px 0;
-    }
-}
